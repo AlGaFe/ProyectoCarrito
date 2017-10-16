@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La Huerta en Casa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="icon" type="image/png" href="images/logo_new.ico" />
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="titulo">
+                <img  id="producto" class="producto" alt="tomate" src="images/logo_new.ico">
+                <h1>La Huerta en Casa</h1>
+            </div>
+        </header>
+        <div class="conjunto-productos">
+            <div class="cuadroProducto" id="tomate" onclick="venderProducto(this)">
+                <img   class="producto" alt="tomate" src="images/tomate.png">
+                <p>Precio:<a id="precio">1</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="lechuga" onclick="venderProducto(this)">
+                <img  class="producto" alt="lechuga" src="images/lechuga.png">
+                <p>Precio: <a id="precio">1.25</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="berenjena" onclick="venderProducto(this)">
+                <img  class="producto" alt="berenjena" src="images/berenjena.png">
+                <p>Precio: <a id="precio">1.50</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="pimiento" onclick="venderProducto(this)">
+                <img  class="producto" alt="pimiento" src="images/pimiento.png">
+                <p>Precio: <a id="precio">0.75</a>€/Kg</p>
+            </div>
+            <div class="cuadroProducto"  id="patata" onclick="venderProducto(this)">
+                <img  class="producto" alt="patata" src="images/patata.png">
+                <p>Precio: <a id="precio">0.5</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="cebolla" onclick="venderProducto(this)">
+                <img  class="producto" alt="cebolla" src="images/cebolla.png">
+                <p>Precio: <a id="precio">0.5</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="zanahoria" onclick="venderProducto(this)">
+                <img  class="producto" alt="zanahoria" src="images/zanahoria.png">
+                <p>Precio: <a id="precio">1</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="brocoli" onclick="venderProducto(this)">
+                <img  class="producto" alt="brocoli" src="images/brocoli.png">
+                <p>Precio: <a id="precio">1.25</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="ajo" onclick="venderProducto(this)">
+                <img  class="producto" alt="ajo" src="images/ajo.png">
+                <p>Precio: <a id="precio">0.60</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="pepino" onclick="venderProducto(this)">
+                <img  class="producto" alt="pepino" src="images/pepino.png">
+                <p>Precio: <a id="precio">1.60</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="espinaca" onclick="venderProducto(this)">
+                <img  class="producto" alt="espinaca" src="images/espinaca.png">
+                <p>Precio: <a id="precio">1.15</a> €/Kg</p>
+            </div>
+            <div class="cuadroProducto" id="maiz" onclick="venderProducto(this)">
+                <img  class="producto" alt="maiz" src="images/maiz.png">
+                <p>Precio: <a id="precio">2</a> €/Kg</p>
+            </div>
+        </div>
+        <div class="precio">
+            <p>Precio total: <a id="precioTotal" class="precio--Total">0</a> €</p>
+        </div>
+        <div class="carrito" id="carrito"></div>
+    </body>
+</html>

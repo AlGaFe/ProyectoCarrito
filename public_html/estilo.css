@@ -1,0 +1,45 @@
+body{
+    background-image:url("images/cesped.jpg") ; 
+}
+.cuadroProducto{
+    margin-top:100px;
+    display: inline-block;
+    width: 16%;
+    background: white;
+    text-align: center;
+}
+.precio{
+    background: white;
+}
+.precio--Total{
+    color:green;
+}
+.conjunto-productos{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.producto{
+    height:200px; 
+    width: 200px
+}
+header{
+    background-image:url("images/lahuertaencasa.jpg") ;
+    color:white;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin:-100px;
+}
+.titulo{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    top: 100px;
+    background-repeat: repeat-y;
+    color: white;      
+}
+.carrito{
+    text-align: center;
+}
+.precioTotal{
+    color:blue;
+}
