@@ -34,10 +34,12 @@ header{
     margin-top: 50px;
     text-align: center;
     top: 100px;
-    background-repeat: repeat-y;
+    width: 100%;
+    background-repeat: repeat-x;
     color: white;      
 }
 .carrito{
+    
     text-align: center;
 }
 .precioTotal{

@@ -48,7 +48,7 @@ function venderProducto(producto) {
         divBotones.appendChild(botonBorrarTodo);
         capa.appendChild(divBotones);
         var cantidad = document.createElement("p");
-        carrito.appendChild(capa);
+        carrito.insertBefore(capa,carrito.firstChild);
         producto = null;
     } else {
         aumentarContador(producto.id);
@@ -181,7 +181,11 @@ function reducirContador(idProd) {
 function calcularPrecioTotal(precio) {
     var precioInt = parseFloat(precio);
     total = total + precioInt;
-    document.getElementById("precioTotal").innerHTML = total;
+    if (total<=0){
+        document.getElementById("precioTotal").innerHTML = 0;
+    }else{
+    document.getElementById("precioTotal").innerHTML = total.toFixed(2);
+}
 }
 function eliminarUnidadCarrito(id, precio,producto) {
     if(verContador(id)==1){
@@ -189,15 +193,15 @@ function eliminarUnidadCarrito(id, precio,producto) {
     }else{
     var precioInt = parseFloat(precio);
     total = total - precioInt;
-    document.getElementById("precioTotal").innerHTML = total;
+    document.getElementById("precioTotal").innerHTML = total.toFixed(2);
     document.getElementById("cantidad"+id).innerHTML = "x" + reducirContador(id);
     }
 }
 function  eliminarTodo(producto, precio) {
     producto.parentNode.removeChild(producto);
     total = total - (precio * verContador(producto.id));
-
-    document.getElementById("precioTotal").innerHTML = total;
+    ponerContadorACero(producto.id);
+    document.getElementById("precioTotal").innerHTML = total.toFixed(2);
 
 }
 function ponerContadorACero(idProd) {
